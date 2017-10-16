@@ -8,7 +8,7 @@
 * Css样式属性或者Js代码后加分号“;”    方便压缩工具“断句”。
 * 文件内容编码均统一为UTF-8。
 * Css、Js中的非注释类中文字符须转换成Unicode编码使用, 以避免编码错误时乱码显示。
-* 文件名以短横线(kebab-case)命名法，例如：user-profile.html
+* 文件名以短横线(kebab-case)命名法，例如：user-profile.html  、 loading-spinner.css 、 avatar-def.jpg
 
 
 HTML
@@ -91,10 +91,10 @@ border-radius: 15px; /* Opera 10.5+, 以及使用了IE-CSS3的IE浏览器 *//标
 }
 ```
 
-Js
+JS
 -------
 * 常量名使用单词大写加下划线，如: USER_NAME
-* 变量、方法名以小驼峰，如：```javascript function getUserInfo (){}  let userProfile = ''; ```
+* 变量、方法名以小驼峰，如：``` function getUserInfo (){}  let userProfile = ''; ```
 * 构造器方法首字母大写，如：DefaultConfig
 * 语句结束添加分号结束“;”
 * 使用严格的条件判断符。用===代替==，用!==代替!=，避免掉入==造成的陷阱
@@ -106,6 +106,8 @@ undefined与null相等
 数字0
 NaN
 ```
+
+
 
 
 
