@@ -65,10 +65,10 @@ border-radius: 15px; /* Opera 10.5+, 以及使用了IE-CSS3的IE浏览器 *//标
 ```
 6个不要
 * 不要在标签上直接写样式
-* 不要在CSS中使用expression
-* 不要在CSS中使用@import
-* 不要在CSS中使用!important
-* 不要在CSS中使用“*”选择符
+* 不要使用expression
+* 不要使用@import
+* 不要使用!important
+* 不要使用“*”选择符
 * 不要将CSS样式写为单行
 
 示例：
