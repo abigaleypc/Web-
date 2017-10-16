@@ -9,6 +9,7 @@
 * 文件内容编码均统一为UTF-8。
 * Css、Js中的非注释类中文字符须转换成Unicode编码使用, 以避免编码错误时乱码显示。
 * 文件名以短横线(kebab-case)命名法，例如：user-profile.html  、 loading-spinner.css 、 avatar-def.jpg
+* 前端项目必须可实现前后分离，正式生产环境尽量压缩、混淆代码文件
 
 
 HTML
@@ -98,6 +99,8 @@ JS
 * 构造器方法首字母大写，如：DefaultConfig
 * 语句结束添加分号结束“;”
 * 使用严格的条件判断符。用===代替==，用!==代替!=，避免掉入==造成的陷阱
+* 重要业务方法必须有注释：修改人、日期、修改内容
+
 在条件判断时，这样的一些值表示false
 ```javascript 
 null
