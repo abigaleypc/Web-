@@ -1,22 +1,21 @@
 # Web前端开发规范文档
 
-主要针对前端最常见的HTML、CSS、JS实行规范开发，减少因为代码格式命名等问题引起的Bug。
-我们的目标：不管有多少人共同参与同一项目，一定要确保每一行代码都像是同一个人编写的。
+主要针对前端HTML、CSS、JS实行规范开发，统一代码格式，规范开发方法，减小项目维护成本
 
 通用规范
 -------
-1. Tab键用两个空格代替（Windows下TAB键占四个空格，Unix下TAB键占八个空格）。
-2. Css样式属性或者Js代码后加分号“;”    方便压缩工具“断句”。
-3. 文件内容编码均统一为UTF-8。
-4. Css、Js中的非注释类中文字符须转换成Unicode编码使用, 以避免编码错误时乱码显示。
+* Tab键用两个空格代替（Windows下Tab键占四个空格，Unix下Tab键占八个空格）。
+* Css样式属性或者Js代码后加分号“;”    方便压缩工具“断句”。
+* 文件内容编码均统一为UTF-8。
+* Css、Js中的非注释类中文字符须转换成Unicode编码使用, 以避免编码错误时乱码显示。
+* 文件名以短横线(kebab-case)命名法，例如：user-profile.html
 
 
 HTML
 -------
-1. html文件名以短横线(kebab-case)命名法，例如：user-profile.html
-2. 嵌套元素应当缩进一次（即4个空格）。
-3. 对于属性的定义，确保全部使用双引号，绝不要使用单引号。如 ```<a href=""></a>```
-4. 尽量避免多余的父元素
+* 嵌套元素应当缩进一次（即4个空格）。
+* 对于属性的定义，确保全部使用双引号，绝不要使用单引号。如 ```<a href=""></a>```
+* 尽量避免多余的父元素
 ```html
 <!-- 不好 -->
 <span class="avatar">
@@ -90,6 +89,22 @@ border-radius: 15px; /* Opera 10.5+, 以及使用了IE-CSS3的IE浏览器 *//标
   background-color: rgba(0,0,0,.5);
   box-shadow: 0 1px 2px #ccc, inset 0 1px 0 #fff;
 }
+```
+
+Js
+-------
+* 常量名使用单词大写加下划线，如: USER_NAME
+* 变量、方法名以小驼峰，如：```javascript function getUserInfo (){}  let userProfile = ''; ```
+* 构造器方法首字母大写，如：DefaultConfig
+* 语句结束添加分号结束“;”
+* 使用严格的条件判断符。用===代替==，用!==代替!=，避免掉入==造成的陷阱
+在条件判断时，这样的一些值表示false
+```javascript 
+null
+undefined与null相等
+字符串''
+数字0
+NaN
 ```
 
 
